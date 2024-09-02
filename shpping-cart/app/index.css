@@ -1,0 +1,91 @@
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px; /* Reduced padding */
+    margin: 12px; /* Reduced margin */
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%; 
+    max-width: 180px; /* Slightly reduced max width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
+    margin: 0 auto; /* Center the image */
+}
+
+.product h3 {
+    margin: 12px 0; /* Reduced margin */
+    font-size: 1.2rem; /* Slightly smaller font size */
+    color: #333;
+}
+
+.product .price {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #666;
+}
+
+.product .actions {
+    margin-top: 12px; /* Reduced margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .actions span {
+    margin: 0 8px;
+    font-size: 1rem;
+}
+
+.product .actions .MuiIconButton-root {
+    padding: 6px; /* Reduced padding */
+    font-size: 1rem; 
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.product .actions .MuiIconButton-root:hover {
+    background-color: #e0e0e0;
+}
+
+.product .actions .MuiIconButton-root svg {
+    font-size: 1.25rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .product {
+        width: calc(33.333% - 24px); /* Adjusted to accommodate smaller margins */
+    }
+}
+
+@media (min-width: 1200px) {
+    .product {
+        width: calc(25% - 24px); /* Adjusted to accommodate smaller margins */
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.total-price {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
